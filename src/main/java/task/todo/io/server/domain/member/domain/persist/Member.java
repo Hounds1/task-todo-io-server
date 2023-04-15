@@ -36,7 +36,7 @@ public class Member extends BaseEntity {
 
     private RoleType roleType;
 
-    public void setEncodePass(final String password, final PasswordEncoder passwordEncoder) {
+    public void setEncodePass(final PasswordEncoder passwordEncoder) {
         this.password = passwordEncoder.encode(password);
     }
 }
